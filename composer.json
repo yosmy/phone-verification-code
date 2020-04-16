@@ -1,0 +1,38 @@
+{
+    "name": "yosmy/phone-verification-code",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "yosmy/mongo": "@dev",
+        "yosmy/id": "@dev",
+        "yosmy/time": "@dev",
+        "hackzilla/password-generator": "^1.4"
+    },
+    "require-dev": {
+        "symfony/debug": "~4",
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\Phone\\": [
+                "src"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yosmy\\Phone\\Test\\": [
+                "tests"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
